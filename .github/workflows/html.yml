@@ -1,0 +1,30 @@
+name: Deploy Página HTML
+
+on:
+  push:
+    branches: [ "main" ] # Dispara o workflow quando houver um push na branch principal (você pode alterar)
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar o GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Fazer o upload dos artefatos
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.' # Caminho para os arquivos da sua página HTML (ajuste se necessário)
+
+      - name: Deploy para o GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
