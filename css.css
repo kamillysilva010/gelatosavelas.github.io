@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 *{
     border:0;
     margin:0;
@@ -8,7 +8,7 @@
 .container{
     width:100%;
     height:200vh;
-    background-color: aquamarine;
+    background-color: #FEB7C3;
     font-family: 'poppins';
 }
 .main{
@@ -17,16 +17,17 @@
     flex-direction:column;
     width:100%;
     height:100vh;
-    background-color: #f5f1eb;
+    background-color: #FEB7C3;
 }
 .menu{
     display:flex;
     justify-content: space-between;
     margin-top:10px;
     width:90%;
-    height:10%;
+    height:8%;
     background-color: #fffefd;
     border-radius: 50px;
+    color:#8C031C
 }
 .menu1{
      width:35%;
@@ -54,9 +55,97 @@ ul{
 li{
     margin: 0 15px;
 }
+.conteudoMain{
+    width:90%;
+    height:100%;
+    display:flex;
+
+}
 .textoConteudo{
     width:50%;
     height:50%;
-    background-color: aqua;
+    align-self:flex-start;
+    margin-top:90px;
+    flex-direction: column;
+}
+
+.textoConteudo div{
+    display:flex;
+    flex-direction:column;
+    font-family: "Poetsen One";
+}
+
+.txt1{
+    font-size: 50px;
+    color: #fffefd;
+}
+.txt2{
+    font-size:50px;
+    color: #fffefd;
+
+}
+.txt3{
+    font-size:80px;
+    color: #8C031C;
+}
+
+.btn{
+    width:150px;
+    height:40px;
+    border-radius:20px;
+    margin-top:10px;
+    
+}
+.realizacao{
+    margin-left:5px;
+    color: #8C031C;
+}
+.produtos{
+    width:110px;
+    background-color: #8C031C;
+    color:#FFFF;
+}
+
+.imagem{
+    width:60%;
+    height:100%;
+    display:flex;
+    justify-content: flex-end;
     align-items: center;
+}
+.circulo{
+    background-color:#fda5b4;
+    width:75%;
+    height:80%;
+    border-radius:50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.circulo img{
+    width:80%;
+    height:110%;
+}
+
+.segundaPg{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentSegundaPg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:95%;
+    height:90%;
+    background-color: #fffefd;
+    border-radius:10px;
+}
+.contentSegundaPg p{
+    color: #8C031C;
+    font-size: 20px;
+
 }
